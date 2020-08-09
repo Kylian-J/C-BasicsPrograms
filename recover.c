@@ -3,6 +3,12 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+// This project is part of the CS50 Harvard course. (https://cs50.harvard.edu/x/2020/psets/4/recover/#:~:text=submit50%20cs50/problems/2020/x/recover)
+
+/* The idea of this .c file is to recover a deleted picture by retrieving
+the bytes value of a picture. It basically search for the start of a jpg file (the signatures of a JPEG), 
+then put the values from the signature to the next signature in a new jpg file. */
+
 int main(int argc, char *argv[])
 {
     if (argc != 2)
